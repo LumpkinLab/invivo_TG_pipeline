@@ -284,15 +284,11 @@ classdef pe_Plot < handle
                 case 30 % Up arrow will highlight next sweep
                     if obj.active_sweep~=obj.num_sweeps
                         change_sweep(obj,obj.active_sweep+1);
-                    else
-                        disp('do nothing up')
                     end
                         
                 case 31 % Down arrow will highlight previous sweep
                     if obj.active_sweep~=1
                         change_sweep(obj,obj.active_sweep-1);
-                    else
-                        disp('do nothing down')
                     end
                 %- Add more cases here, can find case # by uncommenting:         
             end
